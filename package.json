@@ -15,7 +15,8 @@
     "clean:build": "rimraf ./build",
     "prebuild": "npm run lint && npm run test && npm run clean:build",
     "lint": "eslint --ignore-path .eslintignore -- ./src/. ",
-    "test": "jest"
+		"test": "jest",
+		"postinstall": "yarn && yarn build"
   },
   "keywords": [
     "grid",
