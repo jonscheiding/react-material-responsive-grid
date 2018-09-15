@@ -16,7 +16,7 @@
     "prebuild": "npm run lint && npm run test && npm run clean:build",
     "lint": "eslint --ignore-path .eslintignore -- ./src/. ",
 		"test": "jest",
-		"postinstall": "yarn && yarn build"
+		"postinstall": "yarn build"
   },
   "keywords": [
     "grid",
